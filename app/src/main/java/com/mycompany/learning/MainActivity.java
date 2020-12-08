@@ -4,6 +4,7 @@ import android.app.*;
 import android.os.*;
 import android.widget.*;
 import android.view.View;
+import android.util.Log;
 
 public class MainActivity extends Activity 
 {
@@ -13,12 +14,22 @@ public class MainActivity extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-		final TextView textView = findViewById(R.id.textView_id);
-		final Button button = findViewById(R.id.button_id);
+		final TextView textView = findViewById(R.id.mainTextView1);
+		final Button button = findViewById(R.id.mainButton1);
+		final EditText editText=findViewById(R.id.mainEditText1);
 		
 		button.setOnClickListener(new View.OnClickListener() {
 				public void onClick(View v) {
-					textView.setText("awesome");
+					String temp = editText.getText().toString();
+					textView.setText(temp);
+					Log.v("myactivity",temp);
+					//однострочный комментарий
+					
+					/*многострочный
+					комментарий*/
+					
+					/**справочная 
+					информация*/
 				}
 			});
 	}

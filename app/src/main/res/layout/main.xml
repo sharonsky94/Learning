@@ -10,15 +10,21 @@
 		android:text="@string/hello_world"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:id="@+id/textView_id"/>
+		android:id="@+id/mainTextView1"/>
+
+	<EditText
+		android:layout_width="wrap_content"
+		android:inputType="textMultiLine"
+		android:layout_height="wrap_content"
+		android:ems="10"
+		android:id="@+id/mainEditText1"/>
 
 	<Button
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:text="Button"
-		android:onClick="onMyButtonClick"
 		android:layout_margin="20dp"
-		android:id="@+id/button_id"/>
+		android:id="@+id/mainButton1"/>
 
 </LinearLayout>
 
